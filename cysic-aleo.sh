@@ -77,7 +77,7 @@ function install_prover() {
     read -p "请输入您的奖励领取地址 (Aleo 地址,没有的话进入 https://www.provable.tools/account 创建): " CLAIM_REWARD_ADDRESS
     
     # 获取用户的 IP 地址
-    read -p "请输入代理服务器的 IP 地址 (例如: 192.168.1.100): " PROVER_IP
+    read -p "请输入代理服务器的IP地址和端口 (例如: 192.168.1.100:9000): " PROVER_IP
 
     # 创建启动脚本
     cat <<EOF > start_prover.sh

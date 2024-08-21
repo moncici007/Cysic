@@ -57,7 +57,7 @@ function install_agent() {
     cd cysic-prover-agent-v0.1.15
 
     # 启动代理服务器
-    pm2 start start.sh --name "cysic-prover-agent"
+    bash start.sh
     echo "代理服务器已启动。"
 }
 

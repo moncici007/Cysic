@@ -56,9 +56,6 @@ function install_agent() {
     tar -xf cysic-prover-agent-v0.1.15.tgz
     cd cysic-prover-agent-v0.1.15
 
-    # 配置防火墙
-    sudo ufw allow 9000/tcp
-
     # 启动代理服务器
     pm2 start start.sh --name "cysic-prover-agent"
     echo "代理服务器已启动。"
@@ -122,7 +119,6 @@ function restart_prover() {
 # 主菜单
 function main_menu() {
     clear
-    echo "脚本以及教程由推特用户大赌哥 @y95277777 编写，免费开源，请勿相信收费"
     echo "========================= Cysic 代理和证明器安装 ======================================="
     echo "请选择要执行的操作:"
     echo "1. 安装 Cysic 代理服务器"

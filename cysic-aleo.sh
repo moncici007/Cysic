@@ -84,7 +84,7 @@ function install_prover() {
 #!/bin/bash
 cd $CYSIC_PROVER_PATH/cysic-aleo-prover-v0.1.17
 export LD_LIBRARY_PATH=./:\$LD_LIBRARY_PATH
-./cysic-aleo-prover -l ./prover.log -a $PROVER_IP -w $CLAIM_REWARD_ADDRESS.machine_name_1 -tls=true -p asia.aleopool.cysic.xyz:16699
+./cysic-aleo-prover -l ./prover.log -a $PROVER_IP -w $CLAIM_REWARD_ADDRESS.$(curl -s ifconfig.me) -tls=true -p asia.aleopool.cysic.xyz:16699
 EOF
     chmod +x start_prover.sh
 
